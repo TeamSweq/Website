@@ -1,0 +1,19 @@
+.blog .container {
+  width: 940px;
+  margin: auto;
+  padding: 40px; }
+
+.blog h1 {
+  color: #3498DB;
+  font-size: 35px;
+  font-weight: 200; }
+
+.blog a {
+  color: #FF6138; }
+
+.blog p {
+  color: #7F8C8D;
+  font-weight: 300;
+  font-size: 16px; }
+
+/*# sourceMappingURL=style.css.map */

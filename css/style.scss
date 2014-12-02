@@ -1,0 +1,27 @@
+$primary-text: #7F8C8D;
+$header-text: #3498DB;
+$links: #FF6138;
+$secondary-color: #BEEB9F;
+$tertiary-color: #FFFF9D;
+
+.blog .container {
+	width: 940px;;
+	margin: auto;
+	padding: 40px;
+}
+
+.blog h1 {
+	color: $header-text;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.blog a {
+	color: $links;
+}
+
+.blog p {
+	color: $primary-text;
+	font-weight: 300;
+	font-size: 16px;
+}
