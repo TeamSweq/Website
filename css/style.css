@@ -2,7 +2,7 @@
 /* Large CSS Document */
 
 /*--Red--*/
-h1, .blog a 
+.homepic h1, .blog a, .blog h1, .shop h1
 {color: #DC3522;}
 
 /*--LightGray--*/
@@ -22,7 +22,7 @@ h1, .blog a
 {color: #D9CB9E;}
 
 /*--White--*/
-.homepic h1, .homepic h3 span
+.homepic h1, .shop ul a li
 {color: #FFFFFF;}
 
 
@@ -40,7 +40,7 @@ h1, .blog a
 {background-color: #2A2C2B;}
 
 /*--Background-DarkGray--*/
-
+.shop
 {background-color: #1E1E20;}
 
 /*--Background-BrightTan--*/
@@ -54,15 +54,31 @@ h1, .blog a
 
 
 /*--Open Sans--*/ /* 300, 400, 600 */
-.homepic h3, .blog p
+.homepic h3, .blog p, .shop ul a li
 {font-family: 'Open Sans', sans-serif;}
 
 /*--Monsterrat--*/ /* 400, 700 */
-.navmenu a li, .homepic h1, .footer p, .blog h1
+.navmenu a li, .homepic h1, .footer p, .blog h1, .shop h1
 {font-family: 'Montserrat', sans-serif; font-weight: 400; text-transform: uppercase;}
 
+
+
+
+
+/*- LAYOUT -*/
 a {
 	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.container {
+  	margin: auto;
+	padding: 100px 0;
+	width: 65%;
+	max-width: 1020px;
 }
 
 
@@ -91,7 +107,7 @@ a {
 	position: static;
 	display: block;
 	width: 100%;
-	height: 750px;
+	height: 48em;
 	/*background-image: url(http://hd-wallpapersx.com/file/2279/2880x1800/crop/full-moon-cat.jpg);*/
 	background-position: center center;
 	background-size: cover;
@@ -99,13 +115,13 @@ a {
 	top: 0;
 }
 
-.homepic .container {
+.homepic .box {
 	position: absolute;
 	left:0;
     right:0;
     margin-left:auto;
     margin-right:auto;
-    margin-top: 185px;
+    margin-top: 200px;
     width: 1000px;
 }
 
@@ -127,26 +143,57 @@ a {
 
 /*- BLOG -*/
 .blog {
-	margin: auto;
-	width: 85%;
+	width: 100%;
 }
 
-.blog .container {
-  width: 65%;
-  padding: 100px 0; 
+.post {
+	width: 60%;
+	max-width: 800px;
 }
 
 .blog h1 {
   font-size: 30px;
-  font-weight: 200; 
+  padding-top: 30px;
 }
 
 .blog p {
   color: #7F8C8D;
   font-weight: 300;
-  font-size: 18px; 
+  font-size: 18px;
+  padding-bottom: 30px;
+  border-bottom: inset #AFAFAF 1px; 
 }
 
+
+
+
+
+/*- SHOP -*/
+.shop {
+	padding: 100px 0;
+}
+
+.shop .container {
+	margin: auto;
+}
+
+.shop h1 {
+	font-size: 30px;
+}
+
+.shop ul {
+
+}
+
+.shop ul a li {
+
+}
+
+
+
+
+
+/*- FOOTER -*/
 .footer {
 	position: static;
 	display: block;
