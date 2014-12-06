@@ -1,19 +1,161 @@
+@charset "UTF-8";
+/* Large CSS Document */
+
+/*--Red--*/
+h1, .blog a 
+{color: #DC3522;}
+
+/*--LightGray--*/
+.homepic h3
+{color: #374140;}
+
+/*--Gray--*/
+
+{color: #2A2C2B;}
+
+/*--DarkGray--*/
+
+{color: #1E1E20;}
+
+/*--BrightTan--*/
+.footer p
+{color: #D9CB9E;}
+
+/*--White--*/
+.homepic h1, .homepic h3 span
+{color: #FFFFFF;}
+
+
+
+/*--Background-Red--*/
+.homepic
+{background-color: #DC3522;}
+
+/*--Background-LightGray--*/
+
+{background-color: #374140;}
+
+/*--Background-Gray--*/
+
+{background-color: #2A2C2B;}
+
+/*--Background-DarkGray--*/
+
+{background-color: #1E1E20;}
+
+/*--Background-BrightTan--*/
+
+{background-color: #D9CB9E;}
+
+/*--Background-White--*/
+.footer
+{background-color: #FFFFFF;}
+
+
+
+/*--Open Sans--*/ /* 300, 400, 600 */
+.homepic h3, .blog p
+{font-family: 'Open Sans', sans-serif;}
+
+/*--Monsterrat--*/ /* 400, 700 */
+.navmenu a li, .homepic h1, .footer p, .blog h1
+{font-family: 'Montserrat', sans-serif; font-weight: 400; text-transform: uppercase;}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+/*- LANDING PAGE -*/
+.navmenu {
+	position: fixed;
+	width: 100%;
+	height: 75px;
+}
+
+.navmenu ul {
+	margin-top: 15px;
+}
+
+.navmenu a li {
+	display: inline;
+	color: white;
+	font-size: 16px;
+	padding: 15px 20px;
+}
+
+.homepic {
+	position: static;
+	display: block;
+	width: 100%;
+	height: 750px;
+	/*background-image: url(http://hd-wallpapersx.com/file/2279/2880x1800/crop/full-moon-cat.jpg);*/
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	top: 0;
+}
+
+.homepic .container {
+	position: absolute;
+	left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 185px;
+    width: 1000px;
+}
+
+.homepic h1 {
+	text-align: center;
+	font-size: 8em;
+}
+
+.homepic h3 {
+	margin-right: 47px;
+	float: right;
+	font-size: 28px;
+	margin-top: -10px;
+}
+
+
+
+
+
+/*- BLOG -*/
+.blog {
+	margin: auto;
+	width: 85%;
+}
+
 .blog .container {
-  width: 940px;
-  margin: auto;
-  padding: 40px; }
+  width: 65%;
+  padding: 100px 0; 
+}
 
 .blog h1 {
-  color: #3498DB;
-  font-size: 35px;
-  font-weight: 200; }
-
-.blog a {
-  color: #FF6138; }
+  font-size: 30px;
+  font-weight: 200; 
+}
 
 .blog p {
   color: #7F8C8D;
   font-weight: 300;
-  font-size: 16px; }
+  font-size: 18px; 
+}
 
-/*# sourceMappingURL=style.css.map */
+.footer {
+	position: static;
+	display: block;
+	width: 100%;
+}
+
+.footer p { 
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 15px;
+	padding: 40px;
+}
