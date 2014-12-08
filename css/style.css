@@ -2,11 +2,11 @@
 /* Large CSS Document */
 
 /*--Red--*/
-.homepic h1, .blog a, .blog h1, .shop h1
+.homepic h1, .blog a, .post h2, .shop h1
 {color: #DC3522;}
 
 /*--LightGray--*/
-.homepic h3
+.homepic h3, .blog h1
 {color: #374140;}
 
 /*--Gray--*/
@@ -58,7 +58,7 @@
 {font-family: 'Open Sans', sans-serif;}
 
 /*--Monsterrat--*/ /* 400, 700 */
-.navmenu a li, .homepic h1, .footer p, .blog h1, .shop h1
+.navmenu a li, .homepic h1, .footer p, .blog h1, .post h2, .shop h1
 {font-family: 'Montserrat', sans-serif; font-weight: 400; text-transform: uppercase;}
 
 
@@ -70,15 +70,10 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
-.container {
-  	margin: auto;
-	padding: 100px 0;
-	width: 65%;
-	max-width: 1020px;
+.blog h1 {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px 0 30px 0;
 }
 
 
@@ -88,7 +83,6 @@ a:hover {
 /*- LANDING PAGE -*/
 .navmenu {
 	position: fixed;
-	width: 100%;
 	height: 75px;
 }
 
@@ -103,10 +97,13 @@ a:hover {
 	padding: 15px 20px;
 }
 
+.navmenu a li:hover {
+	text-decoration: none;
+}
+
 .homepic {
 	position: static;
 	display: block;
-	width: 100%;
 	height: 48em;
 	/*background-image: url(http://hd-wallpapersx.com/file/2279/2880x1800/crop/full-moon-cat.jpg);*/
 	background-position: center center;
@@ -119,10 +116,7 @@ a:hover {
 	position: absolute;
 	left:0;
     right:0;
-    margin-left:auto;
-    margin-right:auto;
     margin-top: 200px;
-    width: 1000px;
 }
 
 .homepic h1 {
@@ -143,25 +137,19 @@ a:hover {
 
 /*- BLOG -*/
 .blog {
-	width: 100%;
+	padding: 50px 0 30px 0;
 }
 
-.post {
-	width: 60%;
-	max-width: 800px;
+.post a h2 {
+  font-size: 27px;
+  margin: 3px 0;
 }
 
-.blog h1 {
-  font-size: 30px;
-  padding-top: 30px;
-}
-
-.blog p {
+.post p {
   color: #7F8C8D;
   font-weight: 300;
   font-size: 18px;
-  padding-bottom: 30px;
-  border-bottom: inset #AFAFAF 1px; 
+  margin-bottom: 60px;
 }
 
 
@@ -169,10 +157,6 @@ a:hover {
 
 
 /*- SHOP -*/
-.shop {
-	padding: 100px 0;
-}
-
 .shop .container {
 	margin: auto;
 }
