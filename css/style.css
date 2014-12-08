@@ -2,7 +2,7 @@
 /* Large CSS Document */
 
 /*--Red--*/
-.homepic h1, .blog a, .post h2, .shop h1
+.homepic h1, .blog a, .post h2, .shop h1, .clazz h3
 {color: #DC3522;}
 
 /*--LightGray--*/
@@ -22,7 +22,7 @@
 {color: #D9CB9E;}
 
 /*--White--*/
-.homepic h1, .shop ul a li
+.homepic h1, .shop ul a li, .shop h1
 {color: #FFFFFF;}
 
 
@@ -32,7 +32,7 @@
 {background-color: #DC3522;}
 
 /*--Background-LightGray--*/
-
+.clazz
 {background-color: #374140;}
 
 /*--Background-Gray--*/
@@ -54,11 +54,11 @@
 
 
 /*--Open Sans--*/ /* 300, 400, 600 */
-.homepic h3, .blog p, .shop ul a li
+.homepic h3, .blog p, .shop ul a li, .clazz
 {font-family: 'Open Sans', sans-serif;}
 
 /*--Monsterrat--*/ /* 400, 700 */
-.navmenu a li, .homepic h1, .footer p, .blog h1, .post h2, .shop h1
+.navmenu a li, .homepic h1, .footer p, .blog h1, .post h2, .shop h1, .shop h2
 {font-family: 'Montserrat', sans-serif; font-weight: 400; text-transform: uppercase;}
 
 
@@ -70,10 +70,11 @@ a {
 	text-decoration: none;
 }
 
-.blog h1 {
+.blog h1, .shop h1 {
 	text-transform: uppercase;
 	text-align: center;
-	padding: 10px 0 30px 0;
+	padding: 20px 0 80px 0;
+	font-size: 15px;
 }
 
 
@@ -136,18 +137,18 @@ a {
 
 
 /*- BLOG -*/
-.blog {
+.blog, .shop {
 	padding: 50px 0 30px 0;
 }
 
 .post a h2 {
-  font-size: 27px;
+  font-size: 23px;
   margin: 3px 0;
 }
 
 .post p {
   color: #7F8C8D;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   margin-bottom: 60px;
 }
@@ -157,20 +158,21 @@ a {
 
 
 /*- SHOP -*/
-.shop .container {
-	margin: auto;
-}
-
-.shop h1 {
+.shop h2 {
 	font-size: 30px;
 }
 
-.shop ul {
-
+.clazz {
+	padding: 20px;
 }
 
-.shop ul a li {
+.clazz h3 {
+	font-size: 18px;
+	font-weight: 600;
+}
 
+.clazz p {
+	font-size: 15px;
 }
 
 
