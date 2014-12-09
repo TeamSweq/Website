@@ -1,194 +1,129 @@
-@charset "UTF-8";
 /* Large CSS Document */
-
-/*--Red--*/
-.homepic h1, .blog a, .post h2, .shop h1, .clazz h3
-{color: #DC3522;}
-
-/*--LightGray--*/
-.homepic h3, .blog h1
-{color: #374140;}
-
-/*--Gray--*/
-
-{color: #2A2C2B;}
-
-/*--DarkGray--*/
-
-{color: #1E1E20;}
-
-/*--BrightTan--*/
-.footer p
-{color: #D9CB9E;}
-
-/*--White--*/
-.homepic h1, .shop ul a li, .shop h1
-{color: #FFFFFF;}
-
-
-
-/*--Background-Red--*/
-.homepic
-{background-color: #DC3522;}
-
-/*--Background-LightGray--*/
-.clazz
-{background-color: #374140;}
-
-/*--Background-Gray--*/
-
-{background-color: #2A2C2B;}
-
-/*--Background-DarkGray--*/
-.shop
-{background-color: #1E1E20;}
-
-/*--Background-BrightTan--*/
-
-{background-color: #D9CB9E;}
-
-/*--Background-White--*/
-.footer
-{background-color: #FFFFFF;}
-
-
-
-/*--Open Sans--*/ /* 300, 400, 600 */
-.homepic h3, .blog p, .shop ul a li, .clazz
-{font-family: 'Open Sans', sans-serif;}
-
-/*--Monsterrat--*/ /* 400, 700 */
-.navmenu a li, .homepic h1, .footer p, .blog h1, .post h2, .shop h1, .shop h2
-{font-family: 'Montserrat', sans-serif; font-weight: 400; text-transform: uppercase;}
-
-
-
-
-
+/*-- VARIABLES --*/
+/* colors */
+/* fonts */
 /*- LAYOUT -*/
 a {
-	text-decoration: none;
-}
+  text-decoration: none; }
 
 .blog h1, .shop h1 {
-	text-transform: uppercase;
-	text-align: center;
-	padding: 20px 0 80px 0;
-	font-size: 15px;
-}
-
-
-
-
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0 80px 0;
+  font-size: 15px; }
 
 /*- LANDING PAGE -*/
 .navmenu {
-	position: fixed;
-	height: 75px;
-}
+  position: fixed;
+  height: 75px; }
 
 .navmenu ul {
-	margin-top: 15px;
-}
+  margin-top: 15px; }
 
 .navmenu a li {
-	display: inline;
-	color: white;
-	font-size: 16px;
-	padding: 15px 20px;
-}
+  display: inline;
+  color: white;
+  font-size: 16px;
+  padding: 15px 20px; }
 
 .navmenu a li:hover {
-	text-decoration: none;
-}
+  text-decoration: none; }
 
 .homepic {
-	position: static;
-	display: block;
-	height: 48em;
-	/*background-image: url(http://hd-wallpapersx.com/file/2279/2880x1800/crop/full-moon-cat.jpg);*/
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	top: 0;
-}
+  position: static;
+  display: block;
+  height: 48em;
+  /*background-image: url(http://hd-wallpapersx.com/file/2279/2880x1800/crop/full-moon-cat.jpg);*/
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #DC3522;
+  top: 0; }
 
 .homepic .box {
-	position: absolute;
-	left:0;
-    right:0;
-    margin-top: 200px;
-}
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 200px; }
 
 .homepic h1 {
-	text-align: center;
-	font-size: 8em;
-}
+  text-align: center;
+  font-size: 8em;
+  color: #FFFFFF; }
 
 .homepic h3 {
-	margin-right: 47px;
-	float: right;
-	font-size: 28px;
-	margin-top: -10px;
-}
-
-
-
-
+  margin-right: 47px;
+  float: right;
+  font-size: 28px;
+  margin-top: -10px;
+  color: #374140; }
 
 /*- BLOG -*/
 .blog, .shop {
-	padding: 50px 0 30px 0;
-}
+  padding: 50px 0 30px 0; }
+
+.blog h1 {
+  color: #374140; }
+
+.blog a, .post h2 {
+  color: #DC3522; }
+
+.post p {
+  border-bottom: #EAEAEA 1px inset;
+  padding: 0 0 30px 0;
+  margin-bottom: 30px; }
 
 .post a h2 {
   font-size: 23px;
-  margin: 3px 0;
-}
+  margin: 3px 0; }
 
 .post p {
   color: #7F8C8D;
   font-weight: 400;
-  font-size: 18px;
-  margin-bottom: 60px;
-}
-
-
-
-
+  font-size: 18px; }
 
 /*- SHOP -*/
 .shop h2 {
-	font-size: 30px;
-}
+  font-size: 30px;
+  background-color: #1E1E20; }
+
+.shop h1, .shop ul li {
+  color: #FFFFFF; }
 
 .clazz {
-	padding: 20px;
-}
+  padding: 20px;
+  background-color: #374140; }
 
 .clazz h3 {
-	font-size: 18px;
-	font-weight: 600;
-}
+  font-size: 18px;
+  font-weight: 600;
+  color: #DC3522; }
 
 .clazz p {
-	font-size: 15px;
-}
+  font-size: 15px;
+  color: #FFFFFF; }
 
-
-
-
+.clazz .piktur {
+  background-color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px; }
 
 /*- FOOTER -*/
 .footer {
-	position: static;
-	display: block;
-	width: 100%;
-}
+  position: static;
+  display: block;
+  width: 100%;
+  background-color: #FFFFFF; }
 
-.footer p { 
-	text-align: center;
-	letter-spacing: 1px;
-	font-size: 15px;
-	padding: 40px;
-}
+.footer p {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding: 40px;
+  color: #D9CB9E; }
+
+/*# sourceMappingURL=style.css.map */

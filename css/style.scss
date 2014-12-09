@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* Large CSS Document */
+
+/*-- VARIABLES --*/
+
+/* colors */
+$red: #DC3522;
+$lightGray: #374140;
+$gray: #2A2C2B;
+$darkGray: #1E1E20;
+$brightTan: #D9CB9E;
+$white: #FFFFFF;
+
+/* fonts */
+$header: 'Montserrat', sans-serif;
+$paragraph: 'Open Sans', sans-serif;
+
+
+
+
+
+/*- LAYOUT -*/
+a {
+	text-decoration: none;
+}
+
+.blog h1, .shop h1 {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px 0 80px 0;
+	font-size: 15px;
+}
+
+
+
+
+
+/*- LANDING PAGE -*/
+.navmenu {
+	position: fixed;
+	height: 75px;
+}
+
+.navmenu ul {
+	margin-top: 15px;
+}
+
+.navmenu a li {
+	display: inline;
+	color: white;
+	font-size: 16px;
+	padding: 15px 20px;
+}
+
+.navmenu a li:hover {
+	text-decoration: none;
+}
+
+.homepic {
+	position: static;
+	display: block;
+	height: 48em;
+	/*background-image: url(http://hd-wallpapersx.com/file/2279/2880x1800/crop/full-moon-cat.jpg);*/
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: $red;
+	top: 0;
+}
+
+.homepic .box {
+	position: absolute;
+	left:0;
+    right:0;
+    margin-top: 200px;
+}
+
+.homepic h1 {
+	text-align: center;
+	font-size: 8em;
+	color: $white;
+}
+
+.homepic h3 {
+	margin-right: 47px;
+	float: right;
+	font-size: 28px;
+	margin-top: -10px;
+	color: $lightGray;
+}
+
+
+
+
+
+/*- BLOG -*/
+.blog, .shop {
+	padding: 50px 0 30px 0;
+}
+
+.blog h1 {
+	color: $lightGray;
+}
+
+.blog a, .post h2 {
+	color: $red;
+}
+
+.post p{
+	border-bottom: #EAEAEA 1px inset;
+	padding: 0 0 30px 0;
+	margin-bottom: 30px;
+}
+
+.post a h2 {
+  font-size: 23px;
+  margin: 3px 0;
+}
+
+.post p {
+  color: #7F8C8D;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+
+
+
+/*- SHOP -*/
+.shop h2 {
+	font-size: 30px;
+	background-color: $darkGray;
+}
+
+.shop h1, .shop ul li {
+	color: $white;
+}
+
+.clazz {
+	padding: 20px;
+	background-color: $lightGray;
+}
+
+.clazz h3 {
+	font-size: 18px;
+	font-weight: 600;
+	color: $red;
+}
+
+.clazz p {
+	font-size: 15px;
+	color: $white;
+}
+
+.clazz .piktur {
+	background-color: white;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+/*- FOOTER -*/
+.footer {
+	position: static;
+	display: block;
+	width: 100%;
+	background-color: $white;
+}
+
+.footer p { 
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 15px;
+	padding: 40px;
+	color: $brightTan;
+}
