@@ -2,6 +2,14 @@
 /*-- VARIABLES --*/
 /* colors */
 /* fonts */
+.header, .navmenu a li, .homepic, .homepic h1, .blog h1, .post a h2, .shop h1, .shop h2, .footer p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.paragraph, .homepic h3, .post p, .shop ul a li, .clazz {
+  font-family: 'Open Sans', sans-serif; }
+
 /*- LAYOUT -*/
 a {
   text-decoration: none; }
@@ -83,6 +91,9 @@ a {
   font-size: 18px; }
 
 /*- SHOP -*/
+.shop {
+  background-color: #1E1E20; }
+
 .shop h2 {
   font-size: 30px;
   background-color: #1E1E20; }
