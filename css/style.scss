@@ -232,9 +232,13 @@ h1 {
 	margin: 0 0 20px 0;
 }
 
+.threadcontainer {
+	padding: 0 30px;
+}
+
 .thread {
 	padding: 20px 20px 30px 20px;
-	background-color: #F5F5F5;
+	border-bottom: 1px inset #F5F5F5;
 	height: 110px;
 	margin: 15px 0;
 	&:after {
@@ -248,11 +252,8 @@ h1 {
 
 	&:last-child {
 		margin: 15px 0 0 0;
+		border: none;
 	}
-}
-
-.thread:first-child {
-	margin: 0 0 30px 0
 }
 
 .thread-pic {
