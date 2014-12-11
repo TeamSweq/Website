@@ -31,6 +31,13 @@ a {
 	text-decoration: none;
 }
 
+h1 {
+	text-align: center;
+	@extend .header;
+	color: $red;
+	padding: 50px 0 30px 0;
+}
+
 .blog h1, .shop h1 {
 	text-transform: uppercase;
 	text-align: center;
@@ -46,6 +53,7 @@ a {
 .navmenu {
 	position: fixed;
 	height: 75px;
+	top: 0px;
 }
 
 .navmenu ul {
@@ -55,7 +63,7 @@ a {
 .navmenu a li {
 	display: inline;
 	color: white;
-	font-size: 16px;
+	font-size: 15px;
 	padding: 15px 20px;
 	@extend .header;
 }
@@ -209,4 +217,108 @@ a {
 	padding: 40px;
 	color: $brightTan;
 	@extend .header;
+}
+
+
+
+
+
+/*- FORUMS -*/
+.forums {
+	@extend .header;
+	color: $red;
+	background-color: $white;
+	padding: 40px 0 50px 0;
+	margin: 0 0 20px 0;
+}
+
+.thread {
+	padding: 20px 20px 30px 20px;
+	background-color: #F5F5F5;
+	height: 110px;
+	margin: 15px 0;
+	&:after {
+		content: "";
+  		display: table;
+  		clear: both;
+	}
+	&:first-child {
+		margin: 0 0 15px 0;
+	}
+
+	&:last-child {
+		margin: 15px 0 0 0;
+	}
+}
+
+.thread:first-child {
+	margin: 0 0 30px 0
+}
+
+.thread-pic {
+	background-color: $red;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	margin: 15px 0 0 5px;
+}
+
+.thread a h2{
+	@extend .header;
+	float: left;
+	width: 70%;
+	font-size: 17px;
+	color: $darkGray;
+	margin-left: 78px;
+}
+
+.thread p {
+	@extend .paragraph;
+	float: right;
+	width: 18%;
+	text-align: right;
+	font-family: 15px;
+}
+
+.thread a p {
+	float: left;
+	margin-left: 78px;
+	text-align: left;
+	color: $red;
+	margin-top: -36px;
+}
+
+.thread a h6 span {
+	float: right;
+	text-align: right;
+	@extend .paragraph;
+	font-size: 15px;
+	background-color: $red;
+	color: $white;
+	padding: 5px;
+	margin-top: -35px;
+}
+
+.fthread, .fbar {
+	position: fixed;
+	z-index: 0;
+	height: 100%;
+}
+
+.fbar {
+	right: 0;
+	background-color: $red;
+}
+
+/* Forum Navigation Menu */
+.forumnav {
+	width: 100%;
+	background-color: $red;
+	margin-left: -20px;
+	padding: 15px 0;
+}
+
+.navmenu ul {
+	position: static;
+	margin-top: 15px;
 }
