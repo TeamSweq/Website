@@ -2,12 +2,12 @@
 /*-- VARIABLES --*/
 /* colors */
 /* fonts */
-.header, h1, .navmenu a li, .homepic, .homepic h1, .blog h1, .post a h2, .shop h1, .shop h2, .footer p, .forums, .thread a h2 {
+.header, h1, .navmenu a li, .homepic, .homepic h1, .blog h1, .post a h2, .shop h1, .shop h2, .footer p, .forums, .thread-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-transform: uppercase; }
 
-.paragraph, .homepic h3, .post p, .shop ul a li, .clazz, .thread p, .thread a h6 span {
+.paragraph, .homepic h3, .post p, .shop ul a li, .clazz, .thread p, .thread-author, .thread a h6 span {
   font-family: 'Open Sans', sans-serif; }
 
 /*- LAYOUT -*/
@@ -154,9 +154,9 @@ h1 {
   padding: 0 30px; }
 
 .thread {
-  padding: 20px 20px 30px 20px;
+  padding: 10px 20px 0 20px;
   border-bottom: 1px inset #F5F5F5;
-  height: 110px;
+  height: 98px;
   margin: 15px 0; }
   .thread:after {
     content: "";
@@ -173,27 +173,34 @@ h1 {
   height: 50px;
   width: 50px;
   border-radius: 50px;
-  margin: 15px 0 0 5px; }
+  margin: 8px 0 0 5px; }
 
-.thread a h2 {
+.thread-title {
   float: left;
   width: 70%;
   font-size: 17px;
   color: #1E1E20;
-  margin-left: 78px; }
+  margin-left: 78px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #eee; }
 
 .thread p {
   float: right;
   width: 18%;
   text-align: right;
-  font-family: 15px; }
+  font-family: 15px;
+  margin-top: -1px; }
 
-.thread a p {
+.thread-author {
+  float: right;
+  width: 18%;
+  text-align: right;
+  font-family: 15px;
   float: left;
   margin-left: 78px;
   text-align: left;
   color: #DC3522;
-  margin-top: -36px; }
+  margin-top: -16px; }
 
 .thread a h6 span {
   float: right;
@@ -202,11 +209,11 @@ h1 {
   background-color: #DC3522;
   color: #FFFFFF;
   padding: 5px;
-  margin-top: -35px; }
+  margin-top: -26px; }
 
 .fthread, .fbar {
   position: fixed;
-  z-index: 0;
+  z-index: -100;
   height: 100%; }
 
 .fbar {
