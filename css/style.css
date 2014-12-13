@@ -176,13 +176,11 @@ h1 {
   margin: 15px 0 0 5px; }
 
 .thread a h2 {
-  position: absolute;
   float: left;
-  width: 30%;
+  width: 70%;
   font-size: 17px;
   color: #1E1E20;
-  margin-left: 78px; 
-  z-index: 1; }
+  margin-left: 78px; }
 
 .thread p {
   float: right;
@@ -191,17 +189,13 @@ h1 {
   font-family: 15px; }
 
 .thread a p {
-  position: absolute;
   float: left;
   margin-left: 78px;
   text-align: left;
   color: #DC3522;
-  margin-top: -36px;
-  z-index: 1; }
+  margin-top: -36px; }
 
 .thread a h6 span {
-  position: relative;
-  z-index: 1;
   float: right;
   text-align: right;
   font-size: 15px;
