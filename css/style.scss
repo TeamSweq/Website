@@ -272,6 +272,9 @@ h1 {
 	font-size: 17px;
 	color: $darkGray;
 	margin-left: 78px;
+
+	padding-bottom: 12px; // For the dashed line between title and author
+	border-bottom: 1px dashed #eee;
 }
 
 .thread p {
