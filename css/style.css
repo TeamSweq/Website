@@ -2,12 +2,12 @@
 /*-- VARIABLES --*/
 /* colors */
 /* fonts */
-.header, h1, .smallmenu a li, .navmenu a li, .homepic, .homepic h1, .homepic h3, .blog h1, .post a h2, .bpost a h2, .shop h1, .shop h2, .footer p, .forums, .inthread a h2, .theend {
+.header, h1, .smallmenu a li, .navmenu a li, .homepic h1, .blog h1, .post a h2, .bpost a h2, .shop h1, .shop h2, .footer p, .forums, .inthread a h2, .theend {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-transform: uppercase; }
 
-.paragraph, .post p, .bpost p, .shop ul a li, .clazz, .inthread p, .inthread a h6 span {
+.paragraph, .homepic h3, .post p, .bpost p, .shop ul a li, .clazz, .inthread p, .inthread a h6 span {
   font-family: 'Open Sans', sans-serif; }
 
 /*- LAYOUT -*/
@@ -28,14 +28,17 @@ h1 {
 /*- SMALL NAVIGATION MENU -*/
 .smallmenu {
   position: fixed;
+  top: 0;
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
   z-index: 500;
   padding: 5px 0 0 0; }
 
 .smallmenu .box {
-  width: 70%;
-  margin: 0 auto; }
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 40px; }
 
 .smallmenu .logo {
   float: left;
