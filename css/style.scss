@@ -35,7 +35,7 @@ h1 {
 	text-align: center;
 	@extend .header;
 	color: $green;
-	padding: 30px 0 30px 0;
+	padding: 25px 0;
 }
 
 .blog h1, .shop h1 {
@@ -81,7 +81,7 @@ h1 {
   	transition:color .05s ease-out, background .175s ease-in;
 }
 
-.navmenu a li:hover {
+.navmenu a li:hover, .navmenu a li:active {
 	background-color: $green;
 	color: white;
 }
@@ -122,7 +122,8 @@ h1 {
 	background-size: contain;
 	width: 5em;
 	height: 5em;
-	margin: 40px auto 0 auto;
+	margin: 0 auto;
+	top: 40px;
 	left: 0;
 	right: 0;
 }
@@ -388,7 +389,6 @@ h1 {
 .forumnav {
 	width: 100%;
 	background-color: $green;
-	margin-left: -20px;
 	padding: 15px 0;
 }
 

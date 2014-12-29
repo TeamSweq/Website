@@ -1,34 +1,17 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<link href="css/grid.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-
-<title>TeamSweq</title>
-</head>
-
-<body>
+<?php
+$title = null;
+include('inc/header.php');
+?>
 	<div class="grid">
 		<div class="fwidth">
 			<!-- Navigation Menu -->
-			<div class="navmenu">
-				<ul>
-					<a href="#"><li>Games</li></a>
-					<a href="#"><li>Shop</li></a>
-					<div class="right">
-						<a href="blog.html"><li>Blog</li></a>
-						<a href="forum.html"><li>Forums</li></a>
-					</div>
-				</ul>
-			</div>
+			<?php
+			include('inc/mainmenu.php');
+			// include('inc/smallmenu.php');
+			?>
 
 			<!-- FullScreen Billboard -->
 			<div class="homepic">
-				<div class="logo"></div>
 				<div class="box grid-container">
 					<h1>Make way, Minecraft</h1>
 					<h3>The next big server network is here.</h3>
@@ -101,5 +84,4 @@
 			</p>
 		</div>
 	</div>
-</body>
-</html>
+	<?php include('inc/footer.php') ?>
