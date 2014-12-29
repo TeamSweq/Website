@@ -7,7 +7,7 @@ include('inc/header.php');
 			<!-- Navigation Menu -->
 			<?php
 			include('inc/mainmenu.php');
-			// include('inc/smallmenu.php');
+			include('inc/smallmenu.php');
 			?>
 
 			<!-- FullScreen Billboard -->

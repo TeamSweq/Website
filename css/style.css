@@ -2,7 +2,7 @@
 /*-- VARIABLES --*/
 /* colors */
 /* fonts */
-.header, h1, .navmenu a li, .homepic, .homepic h1, .homepic h3, .blog h1, .post a h2, .bpost a h2, .shop h1, .shop h2, .footer p, .forums, .inthread a h2, .theend {
+.header, h1, .smallmenu a li, .navmenu a li, .homepic, .homepic h1, .homepic h3, .blog h1, .post a h2, .bpost a h2, .shop h1, .shop h2, .footer p, .forums, .inthread a h2, .theend {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-transform: uppercase; }
@@ -24,6 +24,51 @@ h1 {
   text-align: center;
   padding: 20px 0 80px 0;
   font-size: 15px; }
+
+/*- SMALL NAVIGATION MENU -*/
+.smallmenu {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  z-index: 500;
+  padding: 5px 0 0 0; }
+
+.smallmenu .box {
+  width: 70%;
+  margin: 0 auto; }
+
+.smallmenu .logo {
+  float: left;
+  background-image: url(../img/logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 4em;
+  height: 4em; }
+
+.smallmenu ul {
+  float: right;
+  width: 65%;
+  max-width: 725px;
+  margin-top: 5px; }
+
+.smallmenu a li {
+  display: inline-block;
+  float: right;
+  color: #2ecc71;
+  font-size: 16px;
+  padding: 15px 20px;
+  margin: 0 15px;
+  -o-transition: color .05s ease-out, background .175s ease-in;
+  -ms-transition: color .05s ease-out, background .175s ease-in;
+  -moz-transition: color .05s ease-out, background .175s ease-in;
+  -webkit-transition: color .05s ease-out, background .175s ease-in;
+  /* ...and now override with proper CSS property */
+  transition: color .05s ease-out, background .175s ease-in; }
+
+.smallmenu a li:hover, .smallmenu a li:active {
+  background-color: #2ecc71;
+  color: #FFFFFF; }
 
 /*- LANDING PAGE -*/
 .navmenu {
@@ -80,7 +125,7 @@ h1 {
   right: 0;
   margin-top: 275px; }
 
-.logo {
+.navmenu .logo {
   position: absolute;
   background-image: url(../img/logo.png);
   background-position: center center;

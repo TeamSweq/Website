@@ -24,7 +24,7 @@ $pad: 20px;
   padding-left: $pad;
 }
 
-.grid:after, .blog:after, .shop:after, .navmenu:after {
+.grid:after, .blog:after, .shop:after, .navmenu:after, .smallmenu .box:after {
   content: "";
   display: table;
   clear: both;

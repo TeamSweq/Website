@@ -8,6 +8,6 @@
 				<a href="forum.php"><li>Forums</li></a>
 			</div>
 		</ul>
-	</div>
 	<a class="logo" href="index.php"></a>
+	</div>
 </div>

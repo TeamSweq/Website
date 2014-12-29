@@ -8,6 +8,7 @@ include('inc/header.php');
 	<div class="forums fwidth">
 		<?php
 			include('inc/mainmenu.php');
+			include('inc/smallmenu.php');
 			?>
 	</div>
 
