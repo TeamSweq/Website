@@ -2,12 +2,12 @@
 /*-- VARIABLES --*/
 /* colors */
 /* fonts */
-.header, h1, .navmenu a li, .homepic, .homepic h1, .blog h1, .post a h2, .shop h1, .shop h2, .footer p, .forums, .thread a h2 {
+.header, h1, .navmenu a li, .homepic, .homepic h1, .homepic h3, .blog h1, .post a h2, .bpost a h2, .shop h1, .shop h2, .footer p, .forums, .inthread a h2, .theend {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-transform: uppercase; }
 
-.paragraph, .homepic h3, .post p, .shop ul a li, .clazz, .thread p, .thread a h6 span {
+.paragraph, .post p, .bpost p, .shop ul a li, .clazz, .inthread p, .inthread a h6 span {
   font-family: 'Open Sans', sans-serif; }
 
 /*- LAYOUT -*/
@@ -16,8 +16,8 @@ a {
 
 h1 {
   text-align: center;
-  color: #DC3522;
-  padding: 50px 0 30px 0; }
+  color: #2ecc71;
+  padding: 30px 0 30px 0; }
 
 .blog h1, .shop h1 {
   text-transform: uppercase;
@@ -27,18 +27,38 @@ h1 {
 
 /*- LANDING PAGE -*/
 .navmenu {
-  position: fixed;
+  position: absolute;
   height: 75px;
-  top: 0px; }
+  width: 50%;
+  max-width: 745px;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
 
 .navmenu ul {
-  margin-top: 15px; }
+  position: static;
+  margin: 45px auto 0 auto; }
 
 .navmenu a li {
-  display: inline;
-  color: white;
-  font-size: 15px;
-  padding: 15px 20px; }
+  display: inline-block;
+  color: #2ecc71;
+  font-size: 16px;
+  padding: 15px 20px;
+  margin: 0 15px 0 15px;
+  -o-transition: color .05s ease-out, background .175s ease-in;
+  -ms-transition: color .05s ease-out, background .175s ease-in;
+  -moz-transition: color .05s ease-out, background .175s ease-in;
+  -webkit-transition: color .05s ease-out, background .175s ease-in;
+  /* ...and now override with proper CSS property */
+  transition: color .05s ease-out, background .175s ease-in; }
+
+.navmenu a li:hover {
+  background-color: #2ecc71;
+  color: white; }
+
+.right {
+  float: right; }
 
 .navmenu a li:hover {
   text-decoration: none; }
@@ -47,30 +67,43 @@ h1 {
   position: static;
   display: block;
   height: 48em;
-  /*background-image: url(http://hd-wallpapersx.com/file/2279/2880x1800/crop/full-moon-cat.jpg);*/
+  background-image: url(../img/widepic4.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #DC3522;
+  background-color: white;
   top: 0; }
 
 .homepic .box {
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 200px; }
+  margin-top: 275px; }
+
+.logo {
+  position: absolute;
+  background-image: url(../img/logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 5em;
+  height: 5em;
+  margin: 40px auto 0 auto;
+  left: 0;
+  right: 0; }
 
 .homepic h1 {
   text-align: center;
-  font-size: 8em;
-  color: #FFFFFF; }
+  font-size: 5.5em;
+  color: #2ecc71; }
 
 .homepic h3 {
   margin-right: 47px;
   float: right;
   font-size: 28px;
-  margin-top: -10px;
-  color: #374140; }
+  margin-top: -5px;
+  color: #374140;
+  text-align: right; }
 
 /*- BLOG -*/
 .blog, .shop {
@@ -79,19 +112,24 @@ h1 {
 .blog h1 {
   color: #374140; }
 
-.blog a, .post h2 {
-  color: #DC3522; }
+.blog a, .post h2, .bpost h2 {
+  color: #2ecc71; }
 
-.post p {
+.blog img {
+  width: 100%;
+  background-size: contain;
+  padding: 10px; }
+
+.post p:last-child, .bpost p:last-child {
+  margin-bottom: 30px;
   border-bottom: #EAEAEA 1px inset;
-  padding: 0 0 30px 0;
-  margin-bottom: 30px; }
+  padding: 0 0 30px 0; }
 
-.post a h2 {
+.post a h2, .bpost a h2 {
   font-size: 23px;
   margin: 3px 0; }
 
-.post p {
+.post p, .bpost p {
   color: #7F8C8D;
   font-weight: 400;
   font-size: 18px; }
@@ -114,7 +152,7 @@ h1 {
 .clazz h3 {
   font-size: 18px;
   font-weight: 600;
-  color: #DC3522; }
+  color: #2ecc71; }
 
 .clazz p {
   font-size: 15px;
@@ -134,18 +172,18 @@ h1 {
   position: static;
   display: block;
   width: 100%;
-  background-color: #FFFFFF; }
+  background-color: #1E1E20; }
 
 .footer p {
   text-align: center;
   letter-spacing: 1px;
   font-size: 15px;
   padding: 40px;
-  color: #D9CB9E; }
+  color: #374140; }
 
 /*- FORUMS -*/
 .forums {
-  color: #DC3522;
+  color: #2ecc71;
   background-color: #FFFFFF;
   padding: 40px 0 50px 0;
   margin: 0 0 20px 0; }
@@ -153,56 +191,77 @@ h1 {
 .threadcontainer {
   padding: 0 30px; }
 
+/* Contains Thread Link */
 .thread {
-  padding: 20px 20px 30px 20px;
-  border-bottom: 1px inset #F5F5F5;
-  height: 110px;
-  margin: 15px 0; }
+  width: 100%;
+  padding: 20px 20px 0 20px;
+  z-index: 3;
+  margin: 15px auto;
+  max-width: 1024px; }
   .thread:after {
     content: "";
     display: table;
     clear: both; }
   .thread:first-child {
-    margin: 0 0 15px 0; }
+    margin: 0 auto 15px auto; }
   .thread:last-child {
-    margin: 15px 0 0 0;
-    border: none; }
+    margin: 15px auto 0 auto; }
 
+/* Little Profile Picture */
 .thread-pic {
-  background-color: #DC3522;
+  position: relative;
+  clear: right;
+  float: left;
+  margin-right: 25px;
+  background-image: url(../img/cat.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 50px;
   width: 50px;
   border-radius: 50px;
-  margin: 15px 0 0 5px; }
+  margin-top: 5px; }
 
-.thread a h2 {
+.inthread {
+  position: relative;
   float: left;
+  height: 80px;
+  width: 87%;
+  border-bottom: 1px inset #F5F5F5; }
+
+.inthread a {
+  overflow: hidden; }
+
+.inthread a h2 {
+  position: relative;
+  float: left;
+  text-align: left;
   width: 70%;
   font-size: 17px;
-  color: #1E1E20;
-  margin-left: 78px; }
+  color: #1E1E20; }
 
-.thread p {
-  float: right;
-  width: 18%;
-  text-align: right;
-  font-family: 15px; }
-
-.thread a p {
+.inthread a p {
+  position: relative;
   float: left;
-  margin-left: 78px;
   text-align: left;
-  color: #DC3522;
-  margin-top: -36px; }
+  color: #2ecc71;
+  margin-top: 3px; }
 
-.thread a h6 span {
+.ffr, .inthread p, .inthread a h6 span {
+  position: relative;
   float: right;
-  text-align: right;
+  text-align: right; }
+
+.inthread p {
+  width: 18%;
+  font-size: 15px; }
+
+.inthread a h6 span {
   font-size: 15px;
-  background-color: #DC3522;
+  background-color: #2ecc71;
   color: #FFFFFF;
   padding: 5px;
-  margin-top: -35px; }
+  margin-top: 10px; }
 
 .fthread, .fbar {
   position: fixed;
@@ -211,17 +270,25 @@ h1 {
 
 .fbar {
   right: 0;
-  background-color: #DC3522; }
+  background-color: #2ecc71; }
 
 /* Forum Navigation Menu */
 .forumnav {
   width: 100%;
-  background-color: #DC3522;
+  background-color: #2ecc71;
   margin-left: -20px;
   padding: 15px 0; }
 
-.navmenu ul {
-  position: static;
-  margin-top: 15px; }
+.forumnav ul {
+  width: 390px; }
+
+.theend {
+  color: #aab9b7;
+  margin: auto auto;
+  text-align: center;
+  padding: 50px;
+  margin-top: -40px; }
+
+/*-- BLOG --*/
 
 /*# sourceMappingURL=style.css.map */
